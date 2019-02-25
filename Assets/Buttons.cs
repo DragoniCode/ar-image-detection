@@ -3,10 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.iOS;
-using UnityEditor;
 using System.IO;
-using UnityEditor.SceneManagement;
 
 public class Buttons : MonoBehaviour {
 
@@ -29,16 +26,17 @@ public class Buttons : MonoBehaviour {
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
-
-    [MenuItem("Example/Load Textures To Folder")]
+    
+    //[MenuItem("Example/Load Textures To Folder")]
     public void Upload()
     {
+        /*
         string[] files = Directory.GetFiles(EditorUtility.OpenFolderPanel("Load png Textures", "", ""));
 
         foreach (string file in files)
             if (file.EndsWith(".png"))
             {
                 //File.Copy(file, SceneManager.GetActiveScene().ToString());
-            }
+            }*/
     }
 }
