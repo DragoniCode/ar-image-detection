@@ -21,4 +21,5 @@ public class DoesntMatter : DefaultTrackableEventHandler {
             GetComponentInChildren<VideoPlayer>().Pause();
         }
     }
+
 }
